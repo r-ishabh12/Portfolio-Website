@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rishabh Jain | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f9fafb;
+    }
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: #111827;
+      color: white;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      padding: 1rem;
+      z-index: 10;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      min-height: 100vh;
+      padding: 6rem 2rem 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    #intro {
+      background-color: #111827;
+      color: white;
+    }
+    #bio { background-color: #f3f4f6; color: #111827; }
+    #skills { background-color: #e5e7eb; color: #111827; }
+    #projects { background-color: #f9fafb; color: #111827; }
+    #contact { background-color: #d1d5db; color: #111827; }
+
+    /* .typing {
+      font-size: 2rem;
+      font-weight: bold;
+      border-right: 2px solid white;
+      white-space: nowrap;
+      overflow: hidden;
+      width: 0;
+      animation: typing 3s steps(20, end) forwards, blink 0.75s step-end infinite;
+    } */
+     .typing {
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  border-right: 2px solid white; /* the blinking cursor */
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 2.5s steps(25, end) forwards, blink 0.75s step-end infinite;
+}
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+    @keyframes blink {
+      from, to { border-color: transparent }
+      50% { border-color: white; }
+    }
+
+    footer {
+      text-align: center;
+      background: #f3f4f6;
+      color: #6b7280;
+      padding: 1rem;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li {
+      margin: 0.5rem 0;
+    }
+    .project {
+      background: white;
+      padding: 1rem;
+      margin: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      max-width: 600px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#intro">Home</a>
+    <a href="#bio">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="intro">
+    <!-- <h1 class="typing">Hi, my name is Rishabh Jain</h1> -->
+     <h1><span class="typing">Hi, my name is Rishabh Jain</span></h1>
+    <p style="margin-top: 1rem;">Aspiring Software Developer & Final-Year CSE Student</p>
+  </section>
+
+  <section id="bio">
+    <h2>About Me</h2>
+    <p style="max-width: 600px;">
+      I'm a final-year Computer Science Engineering student with a passion for building efficient, scalable, and user-friendly digital solutions. With a strong foundation in programming and web development, I enjoy turning ideas into real-world applications. I’m constantly exploring new technologies and aim to contribute to impactful tech projects while growing as a developer.
+    </p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>MySql</li>
+      <li>Java</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>Flappy Bird game</h3>
+      <p>Flappy Bird game clone built using Java and Swing Beginner-level game development. It ssimulates classic flappy bird, including jump mechanics, moving pipes, collision detection, restart mechanics, score tracking.</p>
+      <a href="https://github.com/r-ishabh12/FlappyBird-Java" class="project-link">View Project</a>
+    </div>
+    <div class="project">
+      <h3>Weather App</h3>
+      <p>A responsive weather app built with HTML, CSS, and JavaScript using the OpenWeatherMap API. Displays real-time weather conditions based on user input.</p>
+      <a href="https://r-ishabh12.github.io/WeatherApp/" class="project-link">View Project</a>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <ul>
+      <li><a href="https://github.com/r-ishabh12" target="_blank">GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/rishabh-jain-a738462a9/" target="_blank">LinkedIn</a></li>
+      <li><a href="https://leetcode.com/u/rishabh_1202/" target="_blank">Leetcode</a></li>
+    </ul>
+  </section>
+
+  <footer>&copy; 2025 Rishabh Jain. All rights reserved.</footer>
+
+</body>
+</html>
+
